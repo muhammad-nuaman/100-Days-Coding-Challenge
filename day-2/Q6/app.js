@@ -1,7 +1,7 @@
 "use strict";
 /*
 
-# Question 3:
+# Question 6:
 
 # Stripping Names:
 
