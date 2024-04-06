@@ -18,6 +18,7 @@ const dinner_guests = [
 let guestCantMakeIt = 'Steve Jobs';
 // Guest Replacement
 dinner_guests[dinner_guests.indexOf(guestCantMakeIt)] = 'Sam Altman';
+// Print Invitation
 dinner_guests.forEach((guest, index, guests) => {
     console.log(`Dear ${guest}, you're invited to dinner`);
 });

@@ -21,4 +21,5 @@ const dinner_guests = [
     'Elon Musk',
     'Steve Jobs'
 ];
+// Print Invitation
 dinner_guests.forEach(guest => console.log(`Dear ${guest}, you're invited to dinner`));
