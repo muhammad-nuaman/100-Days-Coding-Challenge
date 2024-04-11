@@ -13,6 +13,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Define an Grocery Array
 const grocery = ['Milk', 'Eggs', 'Bread', 'Cheese'];
 // Intentional Error
+// console.log(grocery[Milk]);
+// Squiggly Line
 // console.log(grocery['Milk']);
 // Print 
 console.log(`Grocery Item:  ${grocery[0]}`);

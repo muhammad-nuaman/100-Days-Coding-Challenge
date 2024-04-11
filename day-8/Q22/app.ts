@@ -14,6 +14,9 @@ const grocery: string[] = ['Milk', 'Eggs', 'Bread', 'Cheese'];
 
 
 // Intentional Error
+// console.log(grocery[Milk]);
+
+// Squiggly Line
 // console.log(grocery['Milk']);
 
 // Print 
