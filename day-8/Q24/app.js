@@ -27,22 +27,26 @@ const person = {
     isMarried: true,
     isGraduate: false,
     doingJob: true,
-    wantToGoForeign: true
+    wantToGoForeign: true,
+    courses: ['Web Dev', 'Data Science', 'GenEng']
 };
 // Define Answers 
 const asnwer = ['Wrong', 'Right'];
-console.log();
-console.log(`Person Name (${person.name}) is Shamir!                ${asnwer[Number(person.name === 'Shamir')]}`);
-console.log(`Person Name (${person.name}) is shamir!                ${asnwer[Number(person.name === 'shamir')]}`);
-console.log(`Person Name (${person.name}) is not Shamir!            ${asnwer[Number(person.name !== 'Shamir')]}`);
-console.log(`Person Name (${person.name}) is not shamir!            ${asnwer[Number(person.name !== 'shamir')]}`);
-console.log(`(${person.name}) age is Greater than 35!               ${asnwer[Number(person.age > 35)]}`);
-console.log(`(${person.name}) age is Greater than or Equal 35!      ${asnwer[Number(person.age >= 35)]}`);
-console.log(`(${person.name}) age is Less than 35!                  ${asnwer[Number(person.age < 35)]}`);
-console.log(`(${person.name}) age is Less than or Equal 35!         ${asnwer[Number(person.age <= 35)]}`);
-console.log(`(${person.name}) has Married!                          ${asnwer[Number(person.isMarried)]}`);
-console.log(`(${person.name}) is Graduate!                          ${asnwer[Number(person.isGraduate)]}`);
-console.log();
+// Checking Person Name and Age
+console.log(`===================================================================`);
+console.dir('Person Bio');
+console.log(`Person Name (${person.name}) is Shamir!                            ${asnwer[Number(person.name === 'Shamir')]}`);
+console.log(`Person Name (${person.name}) is shamir!                            ${asnwer[Number(person.name === 'shamir')]}`);
+console.log(`Person Name (${person.name}) is not Shamir!                        ${asnwer[Number(person.name !== 'Shamir')]}`);
+console.log(`Person Name (${person.name}) is not shamir!                        ${asnwer[Number(person.name !== 'shamir')]}`);
+console.log(`${person.name} age is Greater than 35!                             ${asnwer[Number(person.age > 35)]}`);
+console.log(`${person.name} age is Greater than or Equal 35!                    ${asnwer[Number(person.age >= 35)]}`);
+console.log(`${person.name} age is Less than 35!                                ${asnwer[Number(person.age < 35)]}`);
+console.log(`${person.name} age is Less than or Equal 35!                       ${asnwer[Number(person.age <= 35)]}`);
+console.log(`${person.name} has Married!                                        ${asnwer[Number(person.isMarried)]}`);
+console.log(`${person.name} is Graduate!                                        ${asnwer[Number(person.isGraduate)]}`);
+// Checking Visa Required
+console.log(`===================================================================`);
 if (person.wantToGoForeign) {
     console.dir('Visa Required');
     console.group('\nCandidate Must Married or Graduate');
@@ -54,3 +58,9 @@ if (person.wantToGoForeign) {
         console.dir('Visa Application Approved');
     }
 }
+// Checking Person Courses
+console.log(`===================================================================`);
+console.dir('Governer Initiative Courses');
+console.log(`${person.name} taking Graphic Design Course?                      ${asnwer[Number(person.courses.includes('Graphic Design'))]}`);
+console.log(`${person.name} taking GenEng Course?                               ${asnwer[Number(person.courses.includes('GenEng'))]}`);
+console.log(`===================================================================`);
