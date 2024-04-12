@@ -65,8 +65,8 @@ console.log(`===================================================================
 if (person.wantToGoForeign) {
     console.dir('Visa Required');
     console.group('\nCandidate Must Married or Graduate');
-        console.log(`Candidate Married Status: ${person.isMarried}`);
-        console.log(`Candidate Graduate Status: ${person.isGraduate}`);
+        console.log(`Candidate Married Status:      ${person.isMarried}`);
+        console.log(`Candidate Graduate Status:     ${person.isGraduate}`);
         console.log();
         console.groupEnd();
         
@@ -79,5 +79,5 @@ if (person.wantToGoForeign) {
 console.log(`===================================================================`);
 console.dir('Governer Initiative Courses');
 console.log(`${person.name} taking Graphic Design Course?                      ${asnwer[Number(person.courses.includes('Graphic Design'))]}`);
-console.log(`${person.name} taking GenEng Course?                               ${asnwer[Number(person.courses.includes('GenEng'))]}`);
+console.log(`${person.name} taking GenEng Course?                              ${asnwer[Number(person.courses.includes('GenEng'))]}`);
 console.log(`===================================================================`);
