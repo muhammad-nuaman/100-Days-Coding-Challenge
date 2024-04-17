@@ -10,11 +10,14 @@
 
 // Define Type: User
 type User = {name: string, isLogin: boolean}
+
 // Define Function: Set Login Status Randomly
 const status = () => [false, true][Math.floor(Math.random() * 2)]
+
 // Define Variable: Store Numbers Login Users
 let loginUsers: number = 0;
-// Define Users Array
+
+// Define Users
 const users: User[] = [
     {name: 'Admin', isLogin: status()},
     {name: 'Ahmed', isLogin: status()},

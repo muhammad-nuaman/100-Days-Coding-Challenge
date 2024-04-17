@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const status = () => [false, true][Math.floor(Math.random() * 2)];
 // Define Variable: Store Numbers Login Users
 let loginUsers = 0;
-// Define Users Array
+// Define Users
 const users = [
     { name: 'Admin', isLogin: status() },
     { name: 'Ahmed', isLogin: status() },
