@@ -1,11 +1,11 @@
-/*
+/*=====================================================================
 <<<<< Question 36 >>>>>>
 
 # T-Shirt:
 
 > Create a function for customizing t-shirts.
 
-*/
+=====================================================================*/
 
 // Define Sizes Type
 type Sizes = 'Small' | 'Meduim' | 'Large';

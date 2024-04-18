@@ -1,25 +1,36 @@
-/*
+/*===========================================================
 <<<<<< Question 34 >>>>>>>
 
 # Pizzas: 
 
 > Share your favorite pizzas and express your love for them.
 
-*/
+===========================================================*/
 
 
-// Define Pizza Names
-const pizzas: string[] = ["Margherita Pizza", "Pepperoni Pizza", "BBQ Chicken Pizza"];
+// Define Pizza with It's Descriptions
+const pizzas: {[key: string]: string}[] = [
+    {
+        name: "Margherita Pizza",
+        opinion: "Simple and delicious with tomato sauce, mozzarella, and basil.", 
 
-// Define Pizza Descriptions
-const opinoins: string[] = [
-    "Simple and delicious with tomato sauce, mozzarella, and basil.", 
-    "Classic favorite with spicy pepperoni and gooey cheese.", 
-    "Sweet and smoky BBQ sauce with tender chicken on crispy crust."
+    }, 
+    {
+        name: "Pepperoni Pizza",
+        opinion: "Classic favorite with spicy pepperoni and gooey cheese.", 
+    }, 
+    {
+        name: "BBQ Chicken Pizza",
+        opinion: "Sweet and smoky BBQ sauce with tender chicken on crispy crust."
+    }
+
 ];
 
 
-// Print
-pizzas.forEach((pizza, index) => {
-    console.log(`\n★  ${pizza} ${opinoins[index]}\n`);
+// Print Title
+console.log(`\n<<< Ｐｉｚｚａｓ >>>`);
+
+// Print Pizza Names and Descriptions
+pizzas.forEach(pizza => {
+    console.log(`\n♡  ${pizza.name} ${pizza.opinion}\n`);
 })
